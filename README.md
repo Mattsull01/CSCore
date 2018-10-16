@@ -4,15 +4,15 @@ This repo is an academic exploration into various CS concepts using C#
 ## Current Scope
 ### Data Structures
 
-Simple generic binary search tree
-Balanced binary search trees
-Arrays
-Other various data structures
+Simple generic binary search tree . 
+Balanced binary search trees . 
+Arrays . 
+Other various data structures . 
 
 ### Sorting
-Quick Sort
-Merge Sort
-Other Sorts
+Quick Sort . 
+Merge Sort . 
+Other Sorts . 
 
 ### Text Search and Manipulation 
 
