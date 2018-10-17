@@ -18,7 +18,7 @@ namespace DataStructures
 
 
         [Fact]
-        public void CanPopulateTree()
+        public void ShouldPopulateTree()
         {
             // Arrange
             var arr = new[] { 15, 12, 2, 18, 14, 45, 16 };
@@ -27,15 +27,14 @@ namespace DataStructures
             var bst = BstFixtureHelpers.CreateBst(arr);
 
             // Assert
-            Assert.True(bst.Root.Right.Right.Value == 45);
-            Assert.True(bst.Root.Right.Left.Value == 16);
-            Assert.True(bst.Root.Left.Left.Value == 2);
-            Assert.True(bst.Root.Left.Right.Value == 14);
-
+            Assert.Equal(45, bst.Root.Right.Right.Value);
+            Assert.Equal(16, bst.Root.Right.Left.Value);
+            Assert.Equal(2, bst.Root.Left.Left.Value);
+            Assert.Equal(14, bst.Root.Left.Right.Value);
         }
 
         [Fact]
-        public void CanSearchTree()
+        public void ShouldSearchTree()
         {
             // Arrange
             var arr = new[] { 15, 12, 2, 18, 14, 45, 16 };
@@ -44,12 +43,28 @@ namespace DataStructures
             var bst = BstFixtureHelpers.CreateBst(arr);
 
             // Assert
-            Assert.True(bst.Search(45).Value == bst.Root.Right.Right.Value);
-            Assert.True(bst.Search(16).Value == bst.Root.Right.Left.Value);
-            Assert.True(bst.Search(2).Value == bst.Root.Left.Left.Value);
-            Assert.True(bst.Search(14).Value == bst.Root.Left.Right.Value);
+            Assert.Equal(bst.Root.Right.Right.Value, bst.Search(45).Value);
+            Assert.Equal(bst.Root.Right.Left.Value, bst.Search(16).Value);
+            Assert.Equal(bst.Root.Left.Left.Value, bst.Search(2).Value);
+            Assert.Equal(bst.Root.Left.Right.Value, bst.Search(14).Value);
             Assert.Null(bst.Search(80));
 
+        }
+
+        /// <summary>
+        /// This test was built to test for a suspected bug and enforce the fix
+        /// </summary>
+        [Fact]
+        public void ShouldntChangeRootOnInsert()
+        {
+            // Arrange
+            var arr = new[] { 15, 12, 2, 18, 14, 45, 16 };
+            
+            // Act
+            var bst = BstFixtureHelpers.CreateBst(arr);
+
+            // Assert
+            Assert.Equal(15, bst.Root.Value);
         }
 
         protected class BstFixtureHelpers
