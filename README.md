@@ -1,4 +1,4 @@
-# CSCore
+# CSCore (!!!WIP!!!)
 This repo is an academic exploration into various CS concepts using C#
 
 ## Current Scope
