@@ -9,7 +9,7 @@ namespace DataStructures
             this.Value = value;
         }
 
-        public T Value { get; set; }
+        public T Value { get; private set; }
         public BinarySearchTreeNode<T> Left;
         public BinarySearchTreeNode<T> Right;
     }
