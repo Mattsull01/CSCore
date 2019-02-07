@@ -1,9 +1,20 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSDataStructures", "CSDataStructures\CSDataStructures.csproj", "{B3C70F97-CD59-4744-A6D7-DBAE6AC829F5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EC1FCF76-57CD-4401-AECA-1F675B127DB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{615713C9-820E-42AA-BCCE-8F2A7F974160}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructuresTests", "tests\DataStructuresTests\DataStructuresTests.csproj", "{FE298BC3-9A57-454B-A3AA-AE04A9B35D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "src\DataStructures\DataStructures.csproj", "{54A7ADE1-7D5C-4A28-828D-5D442C8AB8A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F932B159-171D-4164-8BC9-80A269F7856D}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +22,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3C70F97-CD59-4744-A6D7-DBAE6AC829F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3C70F97-CD59-4744-A6D7-DBAE6AC829F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3C70F97-CD59-4744-A6D7-DBAE6AC829F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3C70F97-CD59-4744-A6D7-DBAE6AC829F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE298BC3-9A57-454B-A3AA-AE04A9B35D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE298BC3-9A57-454B-A3AA-AE04A9B35D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE298BC3-9A57-454B-A3AA-AE04A9B35D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE298BC3-9A57-454B-A3AA-AE04A9B35D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54A7ADE1-7D5C-4A28-828D-5D442C8AB8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54A7ADE1-7D5C-4A28-828D-5D442C8AB8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54A7ADE1-7D5C-4A28-828D-5D442C8AB8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54A7ADE1-7D5C-4A28-828D-5D442C8AB8A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE298BC3-9A57-454B-A3AA-AE04A9B35D70} = {615713C9-820E-42AA-BCCE-8F2A7F974160}
+		{54A7ADE1-7D5C-4A28-828D-5D442C8AB8A5} = {EC1FCF76-57CD-4401-AECA-1F675B127DB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF1BACA7-F119-479F-AEC6-30232753FA18}

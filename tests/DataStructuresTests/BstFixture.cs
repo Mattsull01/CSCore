@@ -1,7 +1,8 @@
+using DataStructures;
 using System;
 using Xunit;
 
-namespace DataStructures
+namespace DataStructuresTests
 {
     public class BstFixture
     {
@@ -14,9 +15,7 @@ namespace DataStructures
          *  2   14 16  45
          *
          */
-
-
-
+         
         [Fact]
         public void CanPopulateTree()
         {
@@ -27,11 +26,10 @@ namespace DataStructures
             var bst = BstFixtureHelpers.CreateBst(arr);
 
             // Assert
-            Assert.True(bst.Root.Right.Right.Value == 45);
-            Assert.True(bst.Root.Right.Left.Value == 16);
-            Assert.True(bst.Root.Left.Left.Value == 2);
-            Assert.True(bst.Root.Left.Right.Value == 14);
-
+            Assert.Equal(45, bst.Root.Right.Right.Value);
+            Assert.Equal(16, bst.Root.Right.Left.Value);
+            Assert.Equal(2, bst.Root.Left.Left.Value);
+            Assert.Equal(14, bst.Root.Left.Right.Value);
         }
 
         [Fact]
@@ -44,10 +42,10 @@ namespace DataStructures
             var bst = BstFixtureHelpers.CreateBst(arr);
 
             // Assert
-            Assert.True(bst.Search(45).Value == bst.Root.Right.Right.Value);
-            Assert.True(bst.Search(16).Value == bst.Root.Right.Left.Value);
-            Assert.True(bst.Search(2).Value == bst.Root.Left.Left.Value);
-            Assert.True(bst.Search(14).Value == bst.Root.Left.Right.Value);
+            Assert.Equal(bst.Root.Right.Right.Value, bst.Search(45).Value);
+            Assert.Equal(bst.Root.Right.Left.Value, bst.Search(16).Value);
+            Assert.Equal(bst.Root.Left.Left.Value, bst.Search(2).Value);
+            Assert.Equal(bst.Root.Left.Right.Value, bst.Search(14).Value);
             Assert.Null(bst.Search(80));
 
         }

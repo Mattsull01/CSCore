@@ -1,4 +1,5 @@
-# CSCore (!!!WIP!!!)
+# CSCore
+!!! Experimental !!! 
 This repo is an academic exploration into various CS concepts using C#
 
 ## Current Scope
@@ -6,7 +7,7 @@ This repo is an academic exploration into various CS concepts using C#
 
 Simple generic binary search tree<br>
 Balanced binary search trees<br>
-Arrays<br>
+Array / Circular Arrays (Queues, binary searches etc.) <br>
 Other various data structures<br>
 
 ### Sorting
@@ -15,10 +16,8 @@ Merge Sort<br>
 Other Sorts<br> 
 
 ### Text Search and Manipulation 
-
-
+TBD
 
 ## Notes
-* I try to stick to best practices, however this is not going through rigorous testing, CI or any build requirements, I'm not thinking about concurrency or other types of issues 
-* I welcome constructive criticism and feedback - it helps us all learn
-* I'm using XUnit to run and test the structures
+* This is not going through rigorous testing, CI or any build gates, its not production ready
+* I'm not thinking about concurrency or other types of issues 
